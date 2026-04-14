@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Placement Analytics Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="dashboard">
+      <header class="main-header">
+        <h1>College Placement Dashboard</h1>
+        
+      </header>
+
+      <section class="stats">
+        <div class="stat-card">
+          <h3>Total Students Placed</h3>
+          <p id="totalStudents">0</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>Overall Average Package</h3>
+          <p id="avgPackage">0 LPA</p>
+        </div>
+      </section>
+
+      <section class="charts">
+        <div class="chart-container">
+          <h3>Students per Company</h3>
+          <canvas id="studentsChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+          <h3>Average Package Trend</h3>
+          <canvas id="packageChart"></canvas>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
